@@ -15,6 +15,9 @@ The challenge here is how the server and the client will know when a complete me
 
 Each node has both a chat server process and a chat client process. 
 
+The node use the public key infrastructure for encrypting messages.
+![PKI](https://github.com/ewibowo/p2p-chat/blob/master/PKI.png Public Key Infrastructure)
+
 ```
 For example, to run two nodes:
 
