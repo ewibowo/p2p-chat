@@ -2,7 +2,7 @@
 
 The chat server is listening until a client connects and sends a bytes string. Each node has both a chat server process and a chat client process. 
 
-The node use the public key infrastructure for encrypting messages.
+The nodes (sender and recipient) use the public key infrastructure for encrypting messages.
 ![](https://github.com/ewibowo/p2p-chat/raw/master/PKI.png)
 
 Implementation:
