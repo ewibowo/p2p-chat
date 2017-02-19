@@ -22,7 +22,6 @@ Each node has both a chat server and a chat client. The server will listen to a 
 ```
 For example, to run two nodes:
 Node 1: python3 node.py 1111
-Node 2: python3 node.py 2222
 
 On Node 1:
  --- MENU ---
@@ -31,8 +30,24 @@ On Node 1:
     3. Exit
     
 On Node 2:
- --- MENU ---
+Node 2: python3 node.py 2222
+--- MENU ---
     1. Register a peer
     2. Send a message
     3. Exit
+    
+Please choose: 1
+IP address? 192.168.0.1
+Port no? 1111
+192.168.0.1 1111 has been added OK.
+Sent message to server: identify
+Received from server: 
+-----BEGIN PUBLIC KEY-----
+MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAB7NUoP8KT/XpyBF2qJIF+QXA
+Nce0iJMPa26KBGXVSrxEyyGYOsaDg98DXZ8ru62dLVhBs9AHpp1NJg5O8sSyeSzJ
+CO6rYkBAZxX22DCosQYkc71NEud+M5fRrjcwYjcBIzuv+0DnVoImMdh3jF5mz3Zu
+FFfWPQVNUlFSLy2WSwIDAQAB
+-----END PUBLIC KEY-----
+Received from server: 
+register 192.168.0.1 has been registered.
 ```
