@@ -1,24 +1,20 @@
 # p2p-chat
 
-The chat server should listen until a client connects and sends a bytes string, waiting to reply back to the chat client. These rules are as follows:
+The chat server is listening until a client connects and sends a bytes string.
 
-1.	Communication will take place over TCP.
-
-2.	The client will initiate a chat session by creating a socket connection to the server.
-
-3.	The server will accept the connection and listen for the client to send a bytes string.
-
-4.	The client will send a bytes string to the server.
-
-5.	Once it sends the bytes string, the client will listen for a reply from the server
-
-6.	When it receives the bytes string from the client, the server can send a reply bytes string back to the client.
-
+Implementations:
+1.	Communication takes place over TCP.
+2.	The client initiates a chat session by creating a socket connection to the server.
+3.	The server accepts the connection and listen for the client to send a bytes string.
+4.	The client sends a bytes string to the server.
+5.	Once the client sends the bytes string, it will listen for a reply from the server
+6.	When the server receives the bytes string from the client, it can send a reply bytes string back to the client.
 7.	When the client has received the reply bytes string from the server, it will close its socket to end the session.
 
-The challenge here is how the server and the client will know when a complete message has been sent. Remember that an application sees a TCP connection as an endless stream of bytes, so we need to decide what in that byte stream will signal the end of a message. This problem is called framing. For  this chat applications, we'll be using the UTF-8 character set to send messages. The null byte isn't used in any character in UTF-8 except for the null byte itself, so it makes a good delimiter.
+The challenge here is how the server and the client will know when a complete message has been sent. The reason is that an application sees a TCP connection as an endless stream of bytes, so we need to decide what in that byte stream will signal the end of a message. The problem is called framing. For this chat applications, we will be using the UTF-8 character set to send messages. The null byte is not used in any character in UTF-8 except for the null byte itself, so it makes a good delimiter.
 
-Each node has both a chat server and a chat client. The server will listen to a specific TCP port; whereas the client can initiate the socket connection.
+Each node has both a chat server process and a chat client process. 
+
 ```
 For example, to run two nodes:
 
