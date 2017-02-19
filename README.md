@@ -2,7 +2,8 @@
 
 The chat server is listening until a client connects and sends a bytes string.
 
-Implementations:
+Implementation:
+
 1.	Communication takes place over TCP.
 
 2.	The client initiates a chat session by creating a socket connection to the server.
