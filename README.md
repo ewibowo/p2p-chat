@@ -4,11 +4,17 @@ The chat server is listening until a client connects and sends a bytes string.
 
 Implementations:
 1.	Communication takes place over TCP.
+
 2.	The client initiates a chat session by creating a socket connection to the server.
+
 3.	The server accepts the connection and listen for the client to send a bytes string.
+
 4.	The client sends a bytes string to the server.
-5.	Once the client sends the bytes string, it will listen for a reply from the server
+
+5.	Once the client sends the bytes string, it will listen for a reply from the server.
+
 6.	When the server receives the bytes string from the client, it can send a reply bytes string back to the client.
+
 7.	When the client has received the reply bytes string from the server, it will close its socket to end the session.
 
 The challenge here is how the server and the client will know when a complete message has been sent. The reason is that an application sees a TCP connection as an endless stream of bytes, so we need to decide what in that byte stream will signal the end of a message. The problem is called framing. For this chat applications, we will be using the UTF-8 character set to send messages. The null byte is not used in any character in UTF-8 except for the null byte itself, so it makes a good delimiter.
