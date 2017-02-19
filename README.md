@@ -21,15 +21,15 @@ The challenge here is how the server and the client will know when a complete me
 Each node has both a chat server and a chat client. The server will listen to a specific TCP port; whereas the client can initiate the socket connection.
 ```
 For example, to run two nodes:
-Node 1: python3 node.py 1111
 
-On Node 1:
+On Node 1 (192.168.0.1):
+python3 node.py 1111
  --- MENU ---
     1. Register a peer
     2. Send a message
     3. Exit
     
-On Node 2:
+On Node 2 (192.168.0.2):
 Node 2: python3 node.py 2222
 --- MENU ---
     1. Register a peer
@@ -49,5 +49,5 @@ CO6rYkBAZxX22DCosQYkc71NEud+M5fRrjcwYjcBIzuv+0DnVoImMdh3jF5mz3Zu
 FFfWPQVNUlFSLy2WSwIDAQAB
 -----END PUBLIC KEY-----
 Received from server: 
-register 192.168.0.1 has been registered.
+192.168.0.1 has been successfully registered.
 ```
