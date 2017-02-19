@@ -1,9 +1,6 @@
 # p2p-chat
 
-The chat server listens until a client connects and sends a bytes string. Each node has both a chat server process and a chat client process. 
-
-The nodes (sender and recipient) use the public key infrastructure for encrypting messages.
-![](https://github.com/ewibowo/p2p-chat/raw/master/PKI.png)
+The chat server listens until a client connects and sends a bytes string. Each node has both a server process and a client process. 
 
 Implementation:
 
@@ -20,6 +17,9 @@ Implementation:
 6.	When the server receives the bytes string from the client, it reply a bytes string back to the client.
 
 7.	When the client has received the reply bytes string from the server, it will close its socket to end the session.
+
+The nodes (sender and recipient) use the public key infrastructure for encrypting messages.
+![](https://github.com/ewibowo/p2p-chat/raw/master/PKI.png)
 
 ```
 For example, to run two nodes:
