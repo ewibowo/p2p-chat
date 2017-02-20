@@ -22,7 +22,7 @@ The nodes (sender and recipient) use the public key infrastructure for encryptin
 ![](https://github.com/ewibowo/p2p-chat/raw/master/PKI.png)
 
 ```
-For example, to run two nodes:
+For example, to run two nodes and register a peer.
 
 On Node 1 (192.168.0.1):
 python3 node.py 1111
