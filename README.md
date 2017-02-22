@@ -37,12 +37,10 @@ python3 node.py 2222
     1. Register a peer
     2. Send a message
     3. Exit
-    
 Please choose: 1
-IP address? 192.168.0.1
-Port no? 1111
-192.168.0.1 1111 has been added OK.
-Sent message to server: identify
+Peer IP address? 192.168.0.1
+Peer Port no? 1111
+Send message to peer: identify
 Received from server: 
 -----BEGIN PUBLIC KEY-----
 MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDAB7NUoP8KT/XpyBF2qJIF+QXA
@@ -50,6 +48,5 @@ Nce0iJMPa26KBGXVSrxEyyGYOsaDg98DXZ8ru62dLVhBs9AHpp1NJg5O8sSyeSzJ
 CO6rYkBAZxX22DCosQYkc71NEud+M5fRrjcwYjcBIzuv+0DnVoImMdh3jF5mz3Zu
 FFfWPQVNUlFSLy2WSwIDAQAB
 -----END PUBLIC KEY-----
-Received from server: 
 192.168.0.1 has been successfully registered.
 ```
