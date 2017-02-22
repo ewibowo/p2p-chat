@@ -32,7 +32,7 @@ python3 node.py 1111
     3. Exit
     
 On Node 2 (192.168.0.2):
-Node 2: python3 node.py 2222
+python3 node.py 2222
 --- MENU ---
     1. Register a peer
     2. Send a message
