@@ -25,14 +25,14 @@ The nodes (sender and recipient) use the public key infrastructure for encryptin
 For example, to run two nodes and register a peer.
 
 On Node 1 (192.168.0.1):
-python3 node.py 1111
+$ python3 node.py 1111
  --- MENU ---
     1. Register a peer
     2. Send a message
     3. Exit
     
 On Node 2 (192.168.0.2):
-python3 node.py 2222
+$ python3 node.py 2222
 --- MENU ---
     1. Register a peer
     2. Send a message
